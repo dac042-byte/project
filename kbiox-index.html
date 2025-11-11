@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>K-BioX Networks - Global Bio Network</title>
+	<meta name="description" content="K-BioX Networks - 글로벌 바이오 네트워크, 한국 바이오 과학 커뮤니티">
+	<meta name="keywords" content="K-BioX, 바이오, 네트워크, 과학, 생명공학, bio-science">
+
+	<!-- Accessibility Stylesheet -->
+	<link rel="stylesheet" href="kbiox-styles.css">
+
+	<!-- Preconnect for performance -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+	<!-- Skip Navigation Link for Keyboard Users -->
+	<a href="#main-content" class="skip-link">메인 콘텐츠로 건너뛰기</a>
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="site-header" role="banner">
+			<div class="header-container">
+
+				<!-- Logo and Branding -->
+				<div class="site-branding">
+					<a href="/" class="logo-link" aria-label="K-BioX Networks 홈페이지">
+						<img src="/images/kbiox-logo.png"
+						     alt="K-BioX 안테암불로 로고"
+						     class="site-logo"
+						     width="200"
+						     height="80">
+					</a>
+					<div class="site-title">
+						<h1>
+							<a href="/">K-BioX Networks</a>
+						</h1>
+						<p class="tagline">Global Bio Network</p>
+					</div>
+				</div>
+
+				<!-- Utility Bar -->
+				<div class="utility-bar">
+					<!-- Language Selector -->
+					<div class="language-selector">
+						<button class="lang-toggle"
+						        aria-expanded="false"
+						        aria-controls="lang-menu"
+						        aria-label="언어 선택">
+							<span class="current-lang">한국어</span>
+							<svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
+								<path d="M6 9L1 4h10L6 9z"/>
+							</svg>
+						</button>
+						<ul id="lang-menu" class="lang-menu" hidden role="menu">
+							<li role="none">
+								<a href="/ko" role="menuitem" lang="ko" aria-current="true">한국어</a>
+							</li>
+							<li role="none">
+								<a href="/en" role="menuitem" lang="en">English</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Search Toggle -->
+					<button class="search-toggle"
+					        aria-expanded="false"
+					        aria-controls="search-panel"
+					        aria-label="검색 열기">
+						<svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+							<title>검색</title>
+							<path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+						</svg>
+						<span class="search-text">검색</span>
+					</button>
+
+					<!-- Member Login -->
+					<a href="/login" class="login-link">로그인</a>
+				</div>
+			</div>
+
+			<!-- Main Navigation -->
+			<nav id="main-navigation" aria-label="주요 메뉴" role="navigation">
+				<button class="mobile-nav-toggle"
+				        aria-expanded="false"
+				        aria-controls="nav-menu"
+				        aria-label="메뉴 열기">
+					<span class="hamburger" aria-hidden="true"></span>
+					<span class="menu-text">메뉴</span>
+				</button>
+
+				<ul id="nav-menu" class="nav-menu">
+					<li class="nav-item">
+						<a href="/" class="nav-link" aria-current="page">홈</a>
+					</li>
+					<li class="nav-item">
+						<a href="/about"
+						   class="nav-link"
+						   aria-expanded="false"
+						   aria-controls="about-menu">
+							K-BioX 소개
+						</a>
+						<ul id="about-menu" class="dropdown-menu" hidden>
+							<li><a href="/about/mission">미션과 비전</a></li>
+							<li><a href="/about/history">연혁</a></li>
+							<li><a href="/about/organization">조직도</a></li>
+							<li><a href="/about/team">팀 소개</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/network"
+						   class="nav-link"
+						   aria-expanded="false"
+						   aria-controls="network-menu">
+							네트워크
+						</a>
+						<ul id="network-menu" class="dropdown-menu" hidden>
+							<li><a href="/network/members">회원 목록</a></li>
+							<li><a href="/network/partners">파트너</a></li>
+							<li><a href="/network/global">글로벌 네트워크</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/programs"
+						   class="nav-link"
+						   aria-expanded="false"
+						   aria-controls="programs-menu">
+							프로그램
+						</a>
+						<ul id="programs-menu" class="dropdown-menu" hidden>
+							<li><a href="/programs/education">교육 프로그램</a></li>
+							<li><a href="/programs/research">연구 지원</a></li>
+							<li><a href="/programs/collaboration">협력 프로젝트</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/events" class="nav-link">이벤트</a>
+					</li>
+					<li class="nav-item">
+						<a href="/news" class="nav-link">뉴스</a>
+					</li>
+					<li class="nav-item">
+						<a href="/contact" class="nav-link">문의하기</a>
+					</li>
+					<li class="nav-item nav-cta">
+						<a href="/join" class="nav-link btn-primary">회원가입</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Search Panel (Hidden by default) -->
+		<div id="search-panel" class="search-panel" hidden role="search">
+			<div class="search-container">
+				<label for="site-search" class="search-label">사이트 검색</label>
+				<div class="search-input-wrapper">
+					<input type="search"
+					       id="site-search"
+					       name="q"
+					       placeholder="검색어를 입력하세요"
+					       aria-describedby="search-hint"
+					       autocomplete="off">
+					<button type="button"
+					        class="search-clear visually-hidden"
+					        aria-label="검색어 지우기">
+						<svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+							<path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/>
+						</svg>
+					</button>
+					<button type="submit" class="search-submit" aria-label="검색 실행">
+						<svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+							<path d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"/>
+						</svg>
+					</button>
+				</div>
+				<span id="search-hint" class="visually-hidden">
+					검색어를 입력하고 엔터를 누르세요
+				</span>
+			</div>
+		</div>
+
+		<!-- Main Content -->
+		<main id="main-content" role="main">
+
+			<!-- Hero Section -->
+			<section class="hero-section" aria-labelledby="hero-heading">
+				<div class="hero-container">
+					<div class="hero-content">
+						<h2 id="hero-heading" class="hero-title">
+							Welcome to K-BioX
+						</h2>
+						<p class="hero-subtitle">
+							글로벌 바이오 네트워크의 중심
+						</p>
+						<p class="hero-description">
+							K-BioX는 한국과 전 세계의 바이오 과학자, 연구자, 기업들을 연결하는
+							글로벌 네트워크 플랫폼입니다.
+						</p>
+						<div class="hero-actions">
+							<a href="/join" class="btn btn-primary btn-large">
+								지금 가입하기
+							</a>
+							<a href="/about" class="btn btn-secondary btn-large">
+								더 알아보기
+							</a>
+						</div>
+					</div>
+					<div class="hero-image">
+						<img src="/images/hero-biotech.jpg"
+						     alt="실험실에서 연구하는 과학자들"
+						     loading="eager"
+						     width="600"
+						     height="400">
+					</div>
+				</div>
+			</section>
+
+			<!-- Features Section -->
+			<section class="features-section" aria-labelledby="features-heading">
+				<div class="container">
+					<h2 id="features-heading" class="section-title">
+						K-BioX 핵심 가치
+					</h2>
+
+					<div class="features-grid">
+						<!-- Feature 1 -->
+						<article class="feature-card">
+							<div class="feature-icon" aria-hidden="true">
+								<svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+									<title>네트워크</title>
+									<path d="M24 4c11.046 0 20 8.954 20 20s-8.954 20-20 20S4 35.046 4 24 12.954 4 24 4zm0 4c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16S32.837 8 24 8zm0 6a2 2 0 110 4 2 2 0 010-4zm8 8a2 2 0 110 4 2 2 0 010-4zm-16 0a2 2 0 110 4 2 2 0 010-4zm8 8a2 2 0 110 4 2 2 0 010-4z"/>
+								</svg>
+							</div>
+							<h3 class="feature-title">글로벌 네트워킹</h3>
+							<p class="feature-description">
+								전 세계 바이오 전문가들과 연결되어 협력의 기회를 확대하세요.
+							</p>
+						</article>
+
+						<!-- Feature 2 -->
+						<article class="feature-card">
+							<div class="feature-icon" aria-hidden="true">
+								<svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+									<title>연구</title>
+									<path d="M12 4h24a2 2 0 012 2v36a2 2 0 01-2 2H12a2 2 0 01-2-2V6a2 2 0 012-2zm2 4v32h20V8H14zm4 4h12v2H18v-2zm0 6h12v2H18v-2zm0 6h8v2h-8v-2z"/>
+								</svg>
+							</div>
+							<h3 class="feature-title">연구 지원</h3>
+							<p class="feature-description">
+								최신 연구 동향과 협력 연구 기회를 제공받으세요.
+							</p>
+						</article>
+
+						<!-- Feature 3 -->
+						<article class="feature-card">
+							<div class="feature-icon" aria-hidden="true">
+								<svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+									<title>교육</title>
+									<path d="M24 4l20 10v14c0 8.284-6.716 15-15 15h-10c-8.284 0-15-6.716-15-15V14L24 4zm0 4.472L8 16.528V28c0 6.075 4.925 11 11 11h10c6.075 0 11-4.925 11-11V16.528L24 8.472zM24 14a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z"/>
+								</svg>
+							</div>
+							<h3 class="feature-title">교육 프로그램</h3>
+							<p class="feature-description">
+								전문가 주도의 교육 프로그램과 세미나에 참여하세요.
+							</p>
+						</article>
+
+						<!-- Feature 4 -->
+						<article class="feature-card">
+							<div class="feature-icon" aria-hidden="true">
+								<svg width="48" height="48" viewBox="0 0 48 48" fill="currentColor">
+									<title>파트너십</title>
+									<path d="M16 8a8 8 0 100 16 8 8 0 000-16zm0 4a4 4 0 110 8 4 4 0 010-8zm16 0a8 8 0 100 16 8 8 0 000-16zm0 4a4 4 0 110 8 4 4 0 010-8zM8 28c-2.21 0-4 1.79-4 4v8h32v-8c0-2.21-1.79-4-4-4H8zm24 0c-2.21 0-4 1.79-4 4v8h16v-8c0-2.21-1.79-4-4-4h-8z"/>
+								</svg>
+							</div>
+							<h3 class="feature-title">산학 협력</h3>
+							<p class="feature-description">
+								기업과 연구기관의 협력을 통한 혁신을 추진하세요.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Partners Section -->
+			<section class="partners-section" aria-labelledby="partners-heading">
+				<div class="container">
+					<h2 id="partners-heading" class="section-title">
+						파트너
+					</h2>
+					<p class="section-subtitle">
+						K-BioX와 함께하는 글로벌 파트너들
+					</p>
+
+					<div class="partners-grid">
+						<div class="partner-logo">
+							<img src="/images/partners/partner-1.png"
+							     alt="파트너 대학교 로고"
+							     loading="lazy"
+							     width="200"
+							     height="100">
+						</div>
+						<div class="partner-logo">
+							<img src="/images/partners/partner-2.png"
+							     alt="파트너 연구소 로고"
+							     loading="lazy"
+							     width="200"
+							     height="100">
+						</div>
+						<div class="partner-logo">
+							<img src="/images/partners/partner-3.png"
+							     alt="파트너 기업 로고"
+							     loading="lazy"
+							     width="200"
+							     height="100">
+						</div>
+						<div class="partner-logo">
+							<img src="/images/partners/partner-4.png"
+							     alt="파트너 기관 로고"
+							     loading="lazy"
+							     width="200"
+							     height="100">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Events Section -->
+			<section class="events-section" aria-labelledby="events-heading">
+				<div class="container">
+					<div class="section-header">
+						<h2 id="events-heading" class="section-title">
+							최근 이벤트
+						</h2>
+						<a href="/events" class="view-all-link">
+							모든 이벤트 보기
+							<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+								<path d="M6 3l5 5-5 5V3z"/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="events-grid">
+						<!-- Event 1 -->
+						<article class="event-card">
+							<div class="event-image">
+								<img src="/images/events/event-1.jpg"
+								     alt="바이오 컨퍼런스 행사장"
+								     loading="lazy"
+								     width="400"
+								     height="250">
+								<div class="event-date" aria-label="행사 날짜">
+									<span class="date-day">15</span>
+									<span class="date-month">12월</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">
+									<a href="/events/bio-conference-2025">
+										2025 글로벌 바이오 컨퍼런스
+									</a>
+								</h3>
+								<div class="event-meta">
+									<span class="event-location">
+										<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+											<path d="M8 1a5 5 0 015 5c0 3-5 9-5 9S3 9 3 6a5 5 0 015-5zm0 3a2 2 0 100 4 2 2 0 000-4z"/>
+										</svg>
+										서울 코엑스
+									</span>
+									<span class="event-time">
+										<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+											<path d="M8 1a7 7 0 110 14A7 7 0 018 1zm0 2a5 5 0 100 10A5 5 0 008 3zm1 2v3.586l2.707 2.707-1.414 1.414L7 9.414V5h2z"/>
+										</svg>
+										오전 9:00 - 오후 6:00
+									</span>
+								</div>
+								<p class="event-description">
+									국내외 바이오 전문가들이 모여 최신 연구 성과를 공유하는 컨퍼런스입니다.
+								</p>
+								<a href="/events/bio-conference-2025" class="event-link">
+									자세히 보기
+								</a>
+							</div>
+						</article>
+
+						<!-- Event 2 -->
+						<article class="event-card">
+							<div class="event-image">
+								<img src="/images/events/event-2.jpg"
+								     alt="네트워킹 세미나"
+								     loading="lazy"
+								     width="400"
+								     height="250">
+								<div class="event-date" aria-label="행사 날짜">
+									<span class="date-day">22</span>
+									<span class="date-month">12월</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">
+									<a href="/events/networking-seminar">
+										바이오 스타트업 네트워킹 세미나
+									</a>
+								</h3>
+								<div class="event-meta">
+									<span class="event-location">
+										<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+											<path d="M8 1a5 5 0 015 5c0 3-5 9-5 9S3 9 3 6a5 5 0 015-5zm0 3a2 2 0 100 4 2 2 0 000-4z"/>
+										</svg>
+										판교 테크노밸리
+									</span>
+									<span class="event-time">
+										<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+											<path d="M8 1a7 7 0 110 14A7 7 0 018 1zm0 2a5 5 0 100 10A5 5 0 008 3zm1 2v3.586l2.707 2.707-1.414 1.414L7 9.414V5h2z"/>
+										</svg>
+										오후 2:00 - 오후 5:00
+									</span>
+								</div>
+								<p class="event-description">
+									바이오 스타트업 창업자와 투자자를 위한 네트워킹 행사입니다.
+								</p>
+								<a href="/events/networking-seminar" class="event-link">
+									자세히 보기
+								</a>
+							</div>
+						</article>
+
+						<!-- Event 3 -->
+						<article class="event-card">
+							<div class="event-image">
+								<img src="/images/events/event-3.jpg"
+								     alt="온라인 워크샵"
+								     loading="lazy"
+								     width="400"
+								     height="250">
+								<div class="event-date" aria-label="행사 날짜">
+									<span class="date-day">28</span>
+									<span class="date-month">12월</span>
+								</div>
+							</div>
+							<div class="event-content">
+								<h3 class="event-title">
+									<a href="/events/research-workshop">
+										연구 방법론 온라인 워크샵
+									</a>
+								</h3>
+								<div class="event-meta">
+									<span class="event-location">
+										<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+											<path d="M1 3h14v10H1V3zm2 2v6h10V5H3z"/>
+										</svg>
+										온라인
+									</span>
+									<span class="event-time">
+										<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+											<path d="M8 1a7 7 0 110 14A7 7 0 018 1zm0 2a5 5 0 100 10A5 5 0 008 3zm1 2v3.586l2.707 2.707-1.414 1.414L7 9.414V5h2z"/>
+										</svg>
+										오후 7:00 - 오후 9:00
+									</span>
+								</div>
+								<p class="event-description">
+									최신 바이오 연구 방법론을 배우는 실시간 온라인 워크샵입니다.
+								</p>
+								<a href="/events/research-workshop" class="event-link">
+									자세히 보기
+								</a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- News Section -->
+			<section class="news-section" aria-labelledby="news-heading">
+				<div class="container">
+					<div class="section-header">
+						<h2 id="news-heading" class="section-title">
+							최신 뉴스
+						</h2>
+						<a href="/news" class="view-all-link">
+							모든 뉴스 보기
+							<svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+								<path d="M6 3l5 5-5 5V3z"/>
+							</svg>
+						</a>
+					</div>
+
+					<div class="news-grid">
+						<!-- News Article 1 -->
+						<article class="news-card">
+							<div class="news-image">
+								<img src="/images/news/news-1.jpg"
+								     alt="새로운 파트너십 체결식"
+								     loading="lazy"
+								     width="350"
+								     height="200">
+							</div>
+							<div class="news-content">
+								<div class="news-category">파트너십</div>
+								<h3 class="news-title">
+									<a href="/news/global-partnership">
+										K-BioX, 미국 생명공학 연구소와 MOU 체결
+									</a>
+								</h3>
+								<time class="news-date" datetime="2025-01-05">2025년 1월 5일</time>
+								<p class="news-excerpt">
+									K-BioX가 미국 선도 생명공학 연구소와 협력 양해각서를 체결하여
+									글로벌 연구 네트워크를 확대합니다.
+								</p>
+							</div>
+						</article>
+
+						<!-- News Article 2 -->
+						<article class="news-card">
+							<div class="news-image">
+								<img src="/images/news/news-2.jpg"
+								     alt="신규 회원 환영"
+								     loading="lazy"
+								     width="350"
+								     height="200">
+							</div>
+							<div class="news-content">
+								<div class="news-category">회원</div>
+								<h3 class="news-title">
+									<a href="/news/new-members">
+										2025년 1월 신규 회원 100명 돌파
+									</a>
+								</h3>
+								<time class="news-date" datetime="2025-01-03">2025년 1월 3일</time>
+								<p class="news-excerpt">
+									K-BioX 네트워크가 지속적으로 성장하며 1월에만 100명 이상의
+									신규 회원이 가입했습니다.
+								</p>
+							</div>
+						</article>
+
+						<!-- News Article 3 -->
+						<article class="news-card">
+							<div class="news-image">
+								<img src="/images/news/news-3.jpg"
+								     alt="연구 프로젝트 발표"
+								     loading="lazy"
+								     width="350"
+								     height="200">
+							</div>
+							<div class="news-content">
+								<div class="news-category">연구</div>
+								<h3 class="news-title">
+									<a href="/news/research-project">
+										혁신적인 바이오 연구 프로젝트 지원 시작
+									</a>
+								</h3>
+								<time class="news-date" datetime="2024-12-28">2024년 12월 28일</time>
+								<p class="news-excerpt">
+									K-BioX가 차세대 바이오 기술 개발을 위한 연구 프로젝트 지원
+									프로그램을 런칭했습니다.
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to Action Section -->
+			<section class="cta-section" aria-labelledby="cta-heading">
+				<div class="container">
+					<div class="cta-content">
+						<h2 id="cta-heading" class="cta-title">
+							K-BioX 네트워크에 참여하세요
+						</h2>
+						<p class="cta-description">
+							글로벌 바이오 커뮤니티의 일원이 되어 혁신과 협력의 기회를 만나보세요.
+						</p>
+						<div class="cta-actions">
+							<a href="/join" class="btn btn-primary btn-large">
+								회원가입
+							</a>
+							<a href="/contact" class="btn btn-secondary btn-large btn-outline">
+								문의하기
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<!-- Footer -->
+		<footer id="site-footer" role="contentinfo">
+			<div class="footer-container">
+
+				<!-- Footer Main -->
+				<div class="footer-main">
+					<!-- About Column -->
+					<div class="footer-column">
+						<h3 class="footer-heading">K-BioX Networks</h3>
+						<p class="footer-description">
+							글로벌 바이오 네트워크의 중심, K-BioX는 한국과 전 세계의
+							바이오 과학자들을 연결합니다.
+						</p>
+						<div class="social-links">
+							<a href="https://facebook.com/kbiox"
+							   target="_blank"
+							   rel="noopener noreferrer"
+							   aria-label="페이스북 (새 창)">
+								<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+									<title>Facebook</title>
+									<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+								</svg>
+							</a>
+							<a href="https://twitter.com/kbiox"
+							   target="_blank"
+							   rel="noopener noreferrer"
+							   aria-label="트위터 (새 창)">
+								<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+									<title>Twitter</title>
+									<path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+								</svg>
+							</a>
+							<a href="https://linkedin.com/company/kbiox"
+							   target="_blank"
+							   rel="noopener noreferrer"
+							   aria-label="링크드인 (새 창)">
+								<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+									<title>LinkedIn</title>
+									<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+								</svg>
+							</a>
+							<a href="https://youtube.com/@kbiox"
+							   target="_blank"
+							   rel="noopener noreferrer"
+							   aria-label="유튜브 (새 창)">
+								<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+									<title>YouTube</title>
+									<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Quick Links Column -->
+					<div class="footer-column">
+						<h3 class="footer-heading">빠른 링크</h3>
+						<nav aria-label="푸터 메뉴">
+							<ul class="footer-links">
+								<li><a href="/about">K-BioX 소개</a></li>
+								<li><a href="/network/members">회원 목록</a></li>
+								<li><a href="/programs">프로그램</a></li>
+								<li><a href="/events">이벤트</a></li>
+								<li><a href="/news">뉴스</a></li>
+								<li><a href="/faq">자주 묻는 질문</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Resources Column -->
+					<div class="footer-column">
+						<h3 class="footer-heading">자료</h3>
+						<nav aria-label="자료 메뉴">
+							<ul class="footer-links">
+								<li><a href="/resources/publications">출판물</a></li>
+								<li><a href="/resources/research">연구 자료</a></li>
+								<li><a href="/resources/downloads">다운로드</a></li>
+								<li><a href="/blog">블로그</a></li>
+								<li><a href="/resources/videos">비디오</a></li>
+								<li><a href="/resources/webinars">웨비나</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- Contact Column -->
+					<div class="footer-column">
+						<h3 class="footer-heading">문의</h3>
+						<address class="footer-contact">
+							<p>
+								<strong>K-BioX Networks</strong><br>
+								서울특별시 강남구 테헤란로 123<br>
+								바이오타워 10층
+							</p>
+							<p>
+								<strong>전화:</strong> <a href="tel:+82-2-1234-5678">02-1234-5678</a><br>
+								<strong>이메일:</strong> <a href="mailto:info@kbiox.net">info@kbiox.net</a>
+							</p>
+						</address>
+					</div>
+				</div>
+
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<div class="footer-bottom-content">
+						<p class="copyright">
+							&copy; <span id="current-year">2025</span> K-BioX Networks. All rights reserved.
+						</p>
+						<nav aria-label="법적 정보" class="footer-legal">
+							<ul class="legal-links">
+								<li><a href="/privacy">개인정보처리방침</a></li>
+								<li><a href="/terms">이용약관</a></li>
+								<li><a href="/accessibility">접근성 정책</a></li>
+								<li><a href="/sitemap">사이트맵</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Accessible JavaScript -->
+	<script src="kbiox-scripts.js"></script>
+</body>
+</html>
